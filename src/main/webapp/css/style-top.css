@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #f7f7f7;
+}
+
+body, ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	color: rgb(51, 51, 51);
+}
+
+
+a:hover, a:link, a:visited{
+	text-decoration: none;
+	color: rgb(51, 51, 51);
+}
+
+.top {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(204, 185, 150);	
+	line-height: 80px;
+	margin-bottom: 80px;
+}
+
+/* mainMenu */
+#topLogoImg{
+	height: 60px;	
+	float: left;
+}
+
+.mainMenu, .adminMenu{
+	overflow: auto;	
+	float: right;
+	margin-right: 20px;
+}
+
+.mainMenu li{
+	width: 95px;
+	float: left;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.mainMenu a:hover,
+.adminMenu a:hover{
+	font-weight: bold;
+}
+
+#phoneImg img{
+	height: 45px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+
+.mainMenu li:last-child {
+	width: auto;
+	font-size: 2.5em;
+	line-height: 60px;
+	font-weight: bold;
+}
+
+
+/* 관리자페이지 adminMenu */
+
+.adminMenu #adminInfo{
+	float: left;
+    font-size: 0.9em;
+    line-height: 90px;
+    color: rgba(77, 70, 55, 0.75);
+}
+
+.adminMenu li{
+	width: 95px;
+	float: left;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.adminMenu #logInfo{
+	width: 180px;
+	margin-left: 40px;
+    margin-right: 10px;
+}
+
+.adminMenu #logInfo span{
+	font-weight: 500;
+    font-size: 0.9em;
+}
+
+.adminMenu #logInfo a{
+	font-size: 0.8em;
+}
+
+.adminMenu #logInfo a:hover{
+	font-weight: 400;
+}
+
+.adminMenu #out{
+    width: 105px;
+    margin-top: 14px
+}
+
+.adminMenu #out img{
+	width: 40px;
+	float: left;
+}
+
+.adminMenu #out div{
+	font-size: 1.1em;
+    line-height: 38px;
+    font-weight: 800;
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.bottom{
+	height: 100px;
+	background-color: rgb(77, 70, 55);
+	margin-top: 100px;
+}
+
+.bottom img{
+	height: 90px;
+	margin: 5px;
+	float: left;
+	overflow: auto;
+}
+
+.bottom div{
+	color: #f7f7f7;
+	line-height: 22px;
+	overflow: auto;
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#adminBtn{
+	float: right;
+	background-color: rgb(180, 170, 153);
+	border-radius: 5px;
+	padding: 7px 10px;
+	position: relative;
+	top: 55px;
+	right: 15px;
+	font-size: 0.8em;
+}

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.reportWrap{
+	width: 900px;
+    margin: 0 auto;
+}
+
+#writeBtn{
+	border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+    margin-bottom: 10px;
+}
+
+.reportList{
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.reportList li{
+	float: left;
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.reportList .listTitle{
+	border-top: 1px solid gray;
+	background-color: rgba(224, 224, 224, 0.72);
+}
+
+.pagingWrap{
+	height: 40px;
+}
+
+.paging{
+	width: 260px;
+    height: 40px;
+    margin-left: 340px;
+}
+
+.paging li{
+    float: left;
+    background-color: rgb(237, 237, 237);
+    font-size: 1.1em;
+    padding: 4px 11px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.reportViewWrap{
+	margin-top: 20px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    padding-top: 15px;
+}
+
+.reportView li{
+	float: left;
+	overflow: auto;
+}
+	
+.reportView li:nth-child(1){
+	width: 90%;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.reportView li:nth-child(2){
+	width: 10%;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: right;
+}
+
+.reportView li:nth-child(3){
+	width: 100%;
+    margin-bottom: 5px;
+}
+
+.reportView li:nth-child(4){
+	width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    color: rgba(51, 51, 51, 0.7);
+}

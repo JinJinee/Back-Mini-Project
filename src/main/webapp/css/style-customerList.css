@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+#custTopBtn a{
+	background-color: rgb(224, 224, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(64, 64, 64);
+    margin-bottom: 10px;
+}
+
+#custTopBtn button{
+	background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 6px;
+    color: rgb(64, 64, 64);
+}
+
+/*고객목록*/
+.custListWrap{
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+
+.custListWrap div:first-child{
+	float: left;
+	padding-left: 3px;
+	padding-top: 5px;
+}
+
+.custList{
+	width: 100%;
+	text-align: center;
+	margin-top: 7px;
+	overflow: auto;
+}
+
+.custList li{
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	border-bottom: 1px solid #000;
+}
+.custList .listTop{
+	background-color: rgb(190, 190, 190);
+	border-top: 1px solid #000;
+	font-weight: 600;
+}
+
+.custList li:nth-child(10n+1),
+.custList li:nth-child(10n+2){
+	width: 2.5%;
+}
+
+.custList li:nth-child(10n+3){
+	width: 9%
+}
+
+.custList li:nth-child(10n+4){
+	width: 7%;
+}
+
+.custList li:nth-child(10n+5){
+	width: 11%;
+}
+
+.custList li:nth-child(10n+6),
+.custList li:nth-child(10n+7){
+	width: 14%;
+}
+
+.custList li:nth-child(10n+8){
+	width: 14%;
+}
+
+.custList li:nth-child(10n+9){
+	width: 10%;
+}
+
+.custList li:nth-child(10n+10){
+	width: 16%;
+}
+
+.custList select{
+	width: 50px;
+}
+
+.custList li input[type=datetime-local]{
+	width: 150px;
+	letter-spacing: -1px;
+}
+
+.wordcut{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*페이징*/
+.pagingWrap{
+	margin-top: 40px;
+}
+
+.paging{
+	overflow: auto;
+	margin: 0 auto;
+    width: 280px;
+}
+
+.paging li{
+	width: 17px;
+    height: 17px;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 2px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+#pageClick a{
+	color: #fff;
+}
+
+/*검색*/
+.searchWrap{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.searchWrap select{
+	height: 30px;
+	width: 90px;
+    border: 1px solid #ccc;
+}
+
+.searchWrap input[type=search] {
+	width: 240px;
+	height: 30px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+
+.searchWrap input::-webkit-input-placeholder{
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png) ;
+  background-size: contain;
+  background-position:  1px center;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-indent: 0;
+}
+
+.searchWrap input[type=submit]{
+	height: 30px;
+	width: 55px;
+	border: 1px solid #ccc;
+}
+

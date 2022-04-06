@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<div class="bottom">
+	<a href="${url}"><img src="${url}/img/bottom_logo.png"/></a>
+	<div>
+		담당자. 신수진 <br>
+        Addr. 서울특별시 강남구 삼성동 11 롯데캐슬프리미어 아파트 <br>
+        Contact. 02-999-1004
+	</div>
+	<a href="${url}/admin/loginForm" id="adminBtn">*관리자</a>
+</div>
+</body>
+</html>

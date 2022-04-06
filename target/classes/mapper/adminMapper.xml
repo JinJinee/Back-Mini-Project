@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.campus.myapp.dao.AdminDAO">
+	<insert id="empInsert">
+		insert into emp(empid, emppwd, email, empname, empbirth, gender, tel)
+		values(#{empid}, #{emppwd}, #{email}, #{empname}, #{empbirth}, #{gender}, #{tel})
+	</insert>
+	
+	<select id="idCheck" resultType="int">
+		select count(empid) cnt
+		from emp
+		where empid = #{param1}
+	</select>
+	
+	<select id="loginCheck" resultType="com.campus.myapp.vo.AdminVO">
+		select empid, empname
+		from emp
+		where empid=#{empid} and emppwd=${emppwd}
+	</select>
+	
+	<select id="custList" resultType="com.campus.myapp.vo.ReserveVO">
+		select custno, date_format(writedate, '%Y/%m/%d') writedate, custname, custtel, custemail, custaddr, detail, status, date_format(visitdate, '%Y/%m/%d %h:%i') visitdate
+		from customer
+		<if test="searchWord != null">
+			where ${searchKey} like '%${searchWord}%'
+		</if>
+		order by custno desc
+		limit ${onePageRecord} offset ${offsetIndex}
+	</select>
+	
+	<select id="totalRecord" resultType="int">
+		select count(custno) cnt
+		from customer
+		<if test='searchWord != null'>
+			where ${searchKey} like '%${searchWord}%'
+		</if>
+	</select>
+	
+	<insert id="custInsert">
+		insert into customer(custname, custtel, custemail, custaddr, detail, status<if test="visitdate != ''">,visitdate</if>)
+		values(#{custname}, #{custtel}, #{custemail}, #{custaddr}, #{detail}, #{status}<if test="visitdate != ''">,#{visitdate}</if>)
+	</insert>
+	
+	<select id="custSelect" resultType="com.campus.myapp.vo.ReserveVO">
+		select custno, custname, custtel, custemail, custaddr, detail, status, date_format(visitdate, '%Y/%m/%d %h:%i') visitdate
+		from customer
+		where custno=#{param1}
+	</select>
+
+	<update id="custUpdate">
+		update customer set custname=#{custname}, custtel=#{custtel}, custemail=#{custemail}, 
+		custaddr=#{custaddr}, detail=#{detail}, status=#{status}<if test="visitdate != ''">,visitdate=#{visitdate}</if>
+		where custno=#{custno};
+	</update>
+	
+	<delete id="custListMultiDelete">
+		delete from customer
+		<where>
+			<foreach item="item" collection= "noList" open="custno in (" separator="," close=")">
+				#{item}
+			</foreach>
+		</where>
+	</delete>
+	
+	<select id="calSelect" resultType="com.campus.myapp.vo.ReserveVO">
+		select date_format(visitdate, '%Y') year, date_format(visitdate, '%M') month, date_format(visitdate, '%d') day, 
+				date_format(visitdate, '%h:%i') time, custname
+		from customer
+		where visitdate is not null
+	</select>
+</mapper>

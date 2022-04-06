@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/*로그인*/
+.loginWrap{
+	width: 350px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.loginWrap img{
+	width: 120px;
+	margin-top: 25px;
+}
+
+.loginWrap h2{
+	margin: 5px auto 20px;
+	color: rgb(77, 70, 55);
+	letter-spacing: 3px;
+}
+
+#loginFrm li{
+	margin-bottom: 13px;
+	font-size: 14px;
+}
+
+#loginFrm div{
+	height: 55px;
+    width: 70px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    border: 1px solid rgb(204, 204, 204);
+    border-right: none;
+}
+
+#loginFrm img{
+	width: 35px;
+	height: 35px;
+	margin-top: 10px;
+}
+
+#loginFrm #empid, #loginFrm #emppwd{
+	width: 258px;
+	height: 45px;
+	padding: 5px 10px;
+	border-radius: 0px 5px 5px 0px;
+	border: 1px solid rgb(204, 204, 204);
+	border-left:none;
+}
+
+#loginFrm li:nth-child(3){
+	text-align: left;
+}
+
+#loginFrm #logsubmit{
+	width: 100%;
+    height: 45px;
+    background: rgb(224, 224, 224);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+#loginFrm li:nth-child(6){
+	width: 49%;
+	text-align: left;
+	float: left;
+	overflow: auto;
+}
+
+#loginFrm li:last-child{
+	text-align: right;
+	margin-bottom: 150px;
+}
+
+/*회원가입*/
+.signupWrap{
+	width: 403px;
+	margin: 0 auto;
+}
+
+.signupWrap h1{
+	color: rgb(77, 70, 55);
+    text-align: center;
+    margin-bottom: 40px;
+}
+#signupFrm li{
+	width: 380px;
+}
+
+#signupFrm input, #signupFrm select{
+	height: 40px;
+    border: 1.5px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#signupFrm li:nth-child(2n){
+	margin-bottom: 15px;
+}
+
+#signupFrm #email1{
+	width: 100px;
+}
+
+#signupFrm #email2{
+	width: 105px;
+	margin-right: 5px;
+}
+
+#signupFrm #emailSelect{
+	height: 53px;
+	width: 123px;
+	position: absolute;
+}
+
+#signupFrm #year{
+	width: 106px;
+}
+
+#signupFrm #month{
+	width: 127px;
+	height: 53px;
+	position: absolute;
+	margin-left: 5px;
+}
+
+#signupFrm #day{
+	width: 127px;
+	height: 53px;
+	position: relative;
+	left: 140px;
+}
+
+#signupFrm #gender{
+	height: 53px;
+	width: 403px;
+}
+
+#signupFrm #tel{
+	width: 270px;
+	margin-right: 10px;
+}
+
+#signupFrm #telBtn{
+	width: 100px;
+	height: 53px;
+	border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(77, 70, 55);
+    position: absolute;
+    cursor: pointer;
+}
+
+#secureNum{
+	margin-top: -10px;
+}
+
+#signupFrm li:last-child input{
+	width: 403px;
+	height: 53px;
+	border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: rgb(77, 70, 55);
+    margin-top: 40px;
+    margin-bottom: 50px;
+}

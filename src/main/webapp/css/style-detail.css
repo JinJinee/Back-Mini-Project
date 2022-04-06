@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.detailTitle{
+	width: 920px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+.detailTitle img{
+	width: 50px;
+	float: left;
+    margin-right: 10px;
+}
+
+.detailTitle h1{
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.detailWrap{
+	width: 840px;
+    height: 350px;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    margin: 0 auto;
+    padding: 30px 40px 60px;
+}
+
+.detailWrap li{
+	height: 55px;
+	margin-bottom: 25px;
+}
+
+.detailWrap ul{
+	float: left;
+	width: 50%;
+}
+
+.detailWrap input{
+	width: 270px;
+	height: 50px;
+	border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.detailWrap div{
+	width: 80px;
+	float: left;
+	font-size: 1.2em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
+    color: rgb(77, 70, 55);
+}
+
+.detailWrap #detail{
+	height: 170px;
+    margin-bottom: 35px;
+}
+
+.detailWrap #detail div{
+	float: none;
+    height: 45px;
+}
+
+.detailWrap #detail textarea{
+	width: 350px;
+    height: 110px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.detailWrap ul:nth-child(1){
+	margin-top: 45px;
+}
+
+.detailBtn{
+	width: 920px;
+	margin: 0 auto;
+	margin-top: 30px;
+    text-align: center;
+}
+
+.detailBtn input{
+	width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.detailBtn input[type=submit]{
+	background-color: rgb(224, 224, 224);
+	margin-right: 20px;
+}
+
+.detailBtn input[type=button]{
+	background-color: rgb(94, 94, 94);
+    color: #fff;
+    cursor: pointer;
+}
